@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, p, a, ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.headingH1 {
+    font-size: 40px;
+}
+body{
+    overflow-x: hidden;
+    font-size: 18px;
+}
+.promo {
+    padding-top: 10px;
+    position: relative;
+}
+.promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+.promo__video {
+	overflow: hidden;
+}
+video {
+    height: 90vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+.promo__content {
+	position: relative;
+	color: #fff;
+	padding: 50px;
+	font-size: 20px;
+}
+.promo__content-text {
+    margin-left: 20px;
+    width: 100%;
+}
+.orderBtn {
+    position: fixed;
+    background: none;
+    border: 1px solid black;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.compaund {
+    margin-top: 200px;
+}
+.compaund__wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 4vw);
+    grid-gap: 17px;
+}
+.compaund__item {
+    border: 1px solid red;
+}
+.compaund__item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.compaund__item2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.compaund__item3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
+.compaund__item-main {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.compaund__item4 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.compaund__item5 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.compaund__item6 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
